@@ -28,7 +28,7 @@ order: 4
 
   # What Is This Website?
 
-  This is one of such efforts of the SaṃskṛtaSamiti - to pose simple problems every week inspired by "avadhāna" and solve them. A list of these questions and answers is compiled in this blog.
+  This is one of such efforts of the members of the SaṃskṛtaSamiti - to pose simple problems every week inspired by "avadhāna" and solve them. A list of these questions and answers is compiled in this blog.
   
 </details>
 
