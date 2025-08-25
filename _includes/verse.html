@@ -1,10 +1,34 @@
-<blockquote>
-  {{ include.verse | newline_to_br }}
-  <br>— 
-  {% assign authors = include.author | split: "," %}
-  {% assign last_index = authors | size | minus: 1 %}
-  {% for author_id in authors %}
-    {% assign author_obj = site.data.authors[author_id] %}
-    <strong>{{ author_obj.name }} ({{ author_obj.eng_name }})</strong> {% if forloop.index0 != last_index %}, {% endif %}
-  {% endfor %}
+<blockquote style="font-size: 1em; text-align: center; line-height: 1.6;">
+  {% assign verse_clean = include.verse | strip %}
+  {% assign verse_lines = verse_clean | split: '
+' %}
+
+  {%- for line in verse_lines -%}
+    {{ line }}<br>
+  {%- endfor -%}
+
+  <div style="display: flex; justify-content: space-between; margin-top: 0.5em; font-size: 0.9em;">
+    <div style="text-align: left; margin-left: 2em;">
+      {% if include.meter %}
+        {% assign meter_obj = site.data.meters[include.meter] %}
+        {% if meter_obj %}
+          <em>वृत्तम् – <a href="{{ meter_obj.link }}">{{ meter_obj.name }}</a></em>
+        {% endif %}
+      {% endif %}
+    </div>
+    <div style="text-align: right; margin-right: 2em;">
+      — 
+      {% assign authors = include.author | split: "," %}
+      {% assign last_index = authors | size | minus: 1 %}
+      {% for author_id in authors %}
+        {% assign author_obj = site.data.authors[author_id] %}
+        {% if author_obj.url %}
+          <em><a href="{{ author_obj.url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
+        {% else %}
+          <em>{{ author_obj.name }} ({{ author_obj.name_eng }})</em>
+        {% endif %}
+        {% if forloop.index0 != last_index %}, {% endif %}
+      {% endfor %}
+    </div>
+  </div>
 </blockquote>
