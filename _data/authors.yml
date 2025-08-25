@@ -1,47 +1,80 @@
 aniketh:
   name: अनिकेतः गणेशः
-  iast: Aniketaḥ Gaṇeśaḥ
-  eng_name: Aniketh Ganesh
+  name_iast: Aniketaḥ Gaṇeśaḥ
+  name_eng: Aniketh Ganesh
   twitter: AnikethGanesh
-  url: https://romaharshana.wordpress.com/
+  # url: https://romaharshana.wordpress.com/
+
 amogh:
   name: अमोघः
-  iast: Amoghaḥ
-  eng_name: Amogh
-  url: /authors/amogh
+  name_iast: Amoghaḥ
+  name_eng: Amogh
+
 charumathy:
-  name: चारुमती
-  iast: 
-  eng_name: Charumathy B VijayKrishna
-  url: /authors/charumathy
+  name: चारुमती विजयकृष्णः
+  name_iast: 
+  name_eng: Charumathy B VijayKrishna
+
 gopalan:
   name: गोपालः 
-  iast: Gopālaḥ
-  eng_name: Gopalan S
-  url: /authors/gopalan
+  name_iast: Gopālaḥ
+  name_eng: Gopalan S
+
+nilay:
+  name: निलयः मराठे 
+  name_iast: Nilayaḥ Marāṭhe
+  name_eng: Nilay Marathe
+
 pakshal:
   name: प्रक्षालः नग्डः
-  iast: Prakṣālaḥ Nagḍaḥ
-  eng_name: Pakshal Nagda
-  # url: /authors/pakshal
+  name_iast: Prakṣālaḥ Nagḍaḥ
+  name_eng: Pakshal Nagda
+
 shankar:
   name: शङ्करनारायणः
-  iast: Śaṅkaranārāyaṇaḥ
-  eng_name: Shankaranarayanan C
-  url: /authors/shankar
+  name_iast: Śaṅkaranārāyaṇaḥ
+  name_eng: Shankaranarayanan C
+
 srivatsav:
   name: श्रीवात्सवः
-  iast: 
-  eng_name: Srivatsav
-  url: /authors/srivatsav
+  name_iast: 
+  name_eng: Srivatsav
+
 sridhar:
   name: श्रीधरः रामचन्द्रः
-  iast: 
-  eng_name: Sridhar Ramachandran
-  url: /authors/sridhar
+  name_iast: 
+  name_eng: Sridhar Ramachandran
+
 svp:
   name: श्रीवर्षिणी
-  iast: Śrīvarṣiṇī V P
-  eng_name: Sree Varshini V P
-  url: /authors/svp
+  name_iast: Śrīvarṣiṇī V P
+  name_eng: Sree Varshini V P
 
+
+gopika:
+  name: गोपिका नारायणः
+  name_eng: Gopika Narayanan
+
+kraman:
+  name: कार्त्तिकः रामः
+  name_eng: Karthik Raman
+
+sandhya:
+  name: सन्ध्या
+  name_eng: Sandhya
+
+omkar:
+  name: ओङ्कारः तूपे
+  name_eng: Omkar Tupe
+
+omkar:
+  name: ओङ्कारः तूपे
+  name_eng: Omkar Tupe
+
+veera:
+  name: वीरः
+  name_eng: Veera
+
+pilutla:
+  name: श्रीरामः पिलुट्ला
+  name_eng: Sriram Pilutla
