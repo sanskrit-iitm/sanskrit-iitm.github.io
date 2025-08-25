@@ -1,0 +1,10 @@
+<blockquote>
+  {{ include.verse | newline_to_br }}
+  <br>— 
+  {% assign authors = include.author | split: "," %}
+  {% assign last_index = authors | size | minus: 1 %}
+  {% for author_id in authors %}
+    {% assign author_obj = site.data.authors[author_id] %}
+    <a href="{{ author_obj.url }}">{{ author_obj.name }} ({{ author_obj.eng_name }})</a>{% if forloop.index0 != last_index %}, {% endif %}
+  {% endfor %}
+</blockquote>
