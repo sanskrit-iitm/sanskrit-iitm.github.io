@@ -22,6 +22,8 @@ layout: page
   {% endif %}
 {% endfor %}
 
+{%- assign verses = verses | reverse -%}
+
 {% for v in verses %}
   <hr>
   <blockquote style="font-size: 1em; text-align: center; line-height: 1.6;">

@@ -3,7 +3,6 @@ layout: page
 ---
 
 <div id="authors" class="page">
-
   {%- assign entries = '' | split: '' -%}
   {% for pair in site.data.authors %}
     {% assign id = pair[0] %}
@@ -13,34 +12,21 @@ layout: page
     {% assign entries = entries | concat: singleton %}
   {% endfor %}
 
-  {% comment %} Uncomment this line to sort author names 
   {%- assign entries = entries | sort_natural -%}
-  {% endcomment %}
 
-  <div class="d-flex flex-wrap justify-content-start">
+  <div class="authors-grid">
     {% for entry in entries %}
       {% assign parts = entry | split: '||' %}
       {% assign id    = parts[1] | strip %}
       {% assign a     = site.data.authors[id] %}
 
-      <a href="{{ '/authors/' | append: id | relative_url }}"
-         class="author-card d-flex align-items-center m-3 p-3 rounded"
-         style="flex: 0 0 350px;
-          border: 1px solid rgba(0,0,0,0.1);
-          background: var(--card-bg);
-          color: var(--text-color);
-          text-decoration: none;
-          transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
-
+      <a href="{{ '/authors/' | append: id | relative_url }}" class="author-card">
         {% if a.photo %}
-          <img src="{{ a.photo }}" alt="{{ a.name_eng }}"
-               style="width:60px; height:60px; object-fit:cover; border-radius:50%; margin-right:1em;">
+          <img src="{{ a.photo }}" alt="{{ a.name_eng }}" class="author-photo">
         {% endif %}
-
         <div class="author-info">
-          <h3 style="margin:0; font-size:1.2em;">{{ a.name }}</h3>
-          <p style="margin:0.3em 0; font-size:0.9em; opacity:0.8;">{{ a.name_eng }}</p>
+          <h3>{{ a.name }}</h3>
+          <p>{{ a.name_eng }}</p>
         </div>
       </a>
     {% endfor %}
@@ -48,20 +34,49 @@ layout: page
 </div>
 
 <style>
-  .author-card {
-    flex: 0 0 350px;
-    border: 1px solid rgba(0,0,0,0.1);
-    background: var(--card-bg, #fff);
-    color: var(--text-color, #111);
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
+.authors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.5em;
+}
 
-  .author-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    border-color: rgba(0,0,0,0.15);
-  }
+.author-card {
+  display: flex;
+  align-items: center;
+  width: 340px;
+  padding: 1em;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background: var(--card-bg, #fff);
+  color: var(--text-color, #111);
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.author-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  border-color: rgba(0,0,0,0.2);
+}
+
+.author-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.author-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.author-info p {
+  margin: 0.3em 0 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
 </style>
-
