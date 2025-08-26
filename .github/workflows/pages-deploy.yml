@@ -42,9 +42,9 @@ jobs:
 
       # Generate verses data before build
       - name: Generate author data
-        run: ruby _plugins/generate-authors.rb
+        run: ruby scripts/generate-authors.rb
       - name: Extract verses
-        run: ruby _plugins/extract-verses.rb
+        run: ruby scripts/extract-verses.rb
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
