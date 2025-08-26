@@ -1,19 +1,17 @@
-aniketh:
-  name: अनिकेतः गणेशः
-  name_iast: Aniketaḥ Gaṇeśaḥ
-  name_eng: Aniketh Ganesh
-  twitter: AnikethGanesh
-  # url: https://romaharshana.wordpress.com/
+pakshal:
+  name: पक्षालः नागडा
+  name_iast: Pakṣālaḥ Nāgaḍā
+  name_eng: Pakshal Nagda
 
-amogh:
-  name: अमोघः
-  name_iast: Amoghaḥ
-  name_eng: Amogh
+svp:
+  name: श्रीवर्षिणी
+  name_iast: Śrīvarṣiṇī V P
+  name_eng: Sree Varshini V P
 
-charumathy:
-  name: चारुमती विजयकृष्णः
+srivatsav:
+  name: श्रीवात्सवः
   name_iast: 
-  name_eng: Charumathy B VijayKrishna
+  name_eng: Srivatsav
 
 gopalan:
   name: गोपालः 
@@ -25,39 +23,43 @@ nilay:
   name_iast: Nilayaḥ Marāṭhe
   name_eng: Nilay Marathe
 
-pakshal:
-  name: पक्षालः नागडा
-  name_iast: Pakṣālaḥ Nāgaḍā
-  name_eng: Pakshal Nagda
-
 shankar:
   name: शङ्करनारायणः
   name_iast: Śaṅkaranārāyaṇaḥ
   name_eng: Shankaranarayanan C
 
-srivatsav:
-  name: श्रीवात्सवः
+amogh:
+  name: अमोघः
+  name_iast: Amoghaḥ
+  name_eng: Amogh
+
+aniketh:
+  name: अनिकेतः गणेशः
+  name_iast: Aniketaḥ Gaṇeśaḥ
+  name_eng: Aniketh Ganesh
+  twitter: AnikethGanesh
+  # photo: /img/ss-logo.png
+  # bio: "Test"
+  # url: https://romaharshana.wordpress.com/
+
+charumathy:
+  name: चारुमती विजयकृष्णः
   name_iast: 
-  name_eng: Srivatsav
+  name_eng: Charumathy B VijayKrishna
+
+kraman:
+  name: प्रा. कार्त्तिकः रामः
+  name_eng: Prof. Karthik Raman
 
 sridhar:
   name: श्रीधरः रामचन्द्रः
   name_iast: 
   name_eng: Sridhar Ramachandran
 
-svp:
-  name: श्रीवर्षिणी
-  name_iast: Śrīvarṣiṇī V P
-  name_eng: Sree Varshini V P
-
-
 gopika:
   name: गोपिका नारायणः
   name_eng: Gopika Narayanan
 
-kraman:
-  name: प्रा. कार्त्तिकः रामः
-  name_eng: Prof. Karthik Raman
 
 sandhya:
   name: सन्ध्या

@@ -1,0 +1,57 @@
+---
+layout: page
+---
+
+<div class="author-header" style="display:flex; align-items:center; margin-bottom:2em;">
+  {% if page.author.photo %}
+    <img src="{{ page.author.photo }}" alt="{{ page.author.name_eng }}"
+         style="width:120px; height:120px; object-fit:cover; border-radius:50%; margin-right:1em;">
+  {% endif %}
+  <div>
+    <h2 style="margin:0;"><em>{{ page.author.name_iast }} ({{ page.author.name_eng }})</em></h2>
+    {% if page.author.bio %}
+      <p style="margin-top:0.5em; font-size:0.95em; opacity:0.85;">{{ page.author.bio }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% assign verses = '' | split: '' %}
+{% for v in site.data.verses %}
+  {% if v.author contains page.author_id %}
+    {% assign verses = verses | push: v %}
+  {% endif %}
+{% endfor %}
+
+{% for v in verses %}
+  <hr>
+  <blockquote style="font-size: 1em; text-align: center; line-height: 1.6;">
+    {% assign verse_clean = v.verse | strip %}
+    {% assign verse_lines = verse_clean | split: '
+' %}
+
+    {%- for line in verse_lines -%}
+      {{ line }}<br>
+    {%- endfor -%}
+
+    <!-- Right-aligned source + meter -->
+    <div style="text-align: right; margin-top: 0.5em; font-size: 0.9em; margin-right: 2em;">
+      <a href="{{ v.page }}">→ {{ v.title }}</a>
+      {% if v.meter %}
+        {% assign meter_obj = site.data.meters[v.meter] %}
+        {% if meter_obj %}
+          | <em><a href="{{ meter_obj.link }}">{{ meter_obj.name }}</a></em>
+        {% endif %}
+      {% endif %}
+    </div>
+  </blockquote>
+
+  {% if v.anvaya %}
+  <details style="margin: 0.5em 2em; text-align: left; font-size: 0.95em;">
+    <summary style="cursor: pointer; font-weight: bold;">अन्वयः</summary>
+    <div style="margin-top: 0.3em;">
+      {{ v.anvaya }}
+    </div>
+  </details>
+  {% endif %}
+  <br>
+{% endfor %}
