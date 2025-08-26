@@ -2,7 +2,7 @@
 title: Viloma-Vākya
 date: 2025-08-23 18:07:00 +0530
 categories: [Samasyā Series]
-tags: [samasyā, viloma]  # TAG names should always be lowercase
+tags: [viloma]  # TAG names should always be lowercase
 authors: [pakshal]
 description: Construct a semordnilap
 # toc: false

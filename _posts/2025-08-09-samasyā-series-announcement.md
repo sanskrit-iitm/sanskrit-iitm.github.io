@@ -2,7 +2,7 @@
 title: Samasyā Series
 date: 2025-08-09 07:24:00 +0530
 categories: [Samasyā Series]
-tags: [samasyā, pādapūrti]  # TAG names should always be lowercase
+tags: [pādapūrti]  # TAG names should always be lowercase
 authors: [pakshal]
 description: Announcement of the Samasyā Series.
 # toc: false
@@ -52,16 +52,12 @@ For instance, a challenge can be to solve the given pādapūrti. ie. your verse 
 
 A valid solution to the above pādapūrti is:
 
-{% include verse.html
-   author="svp"
-   meter="zloka"
-   verse="
-    <strong>श्री</strong>निकेताय यद्गोप्या
-    <strong>नि</strong>त्यभक्त्या कृतं ननु।
-    <strong>के</strong>वलमपि तत्स्वर्गे
-    <strong>त</strong>क्रं शक्रस्य दुर्लभम्॥
-   "
-%}
+
+> <strong>श्री</strong>निकेताय यद्गोप्या
+> <strong>नि</strong>त्यभक्त्या कृतं ननु।
+> <strong>के</strong>वलमपि तत्स्वर्गे
+> <strong>त</strong>क्रं शक्रस्य दुर्लभम्॥
+   
 (The buttermilk made by gopī for Kṛṣṇa is not available to even indra in heaven.)
 ~ Credits: @Sree Varshini V P
 
