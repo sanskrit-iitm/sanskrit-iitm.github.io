@@ -7,28 +7,25 @@
     {{ line }}<br>
   {%- endfor -%}
 
-  <div style="display: flex; justify-content: space-between; margin-top: 0.5em; font-size: 0.9em;">
-    <div style="text-align: left; margin-left: 2em;">
-      {% if include.meter %}
-        {% assign meter_obj = site.data.meters[include.meter] %}
-        {% if meter_obj %}
-          <em>वृत्तम् – <a href="{{ meter_obj.link }}">{{ meter_obj.name }}</a></em>
-        {% endif %}
+  <div style="text-align: right; margin-top: 0.5em; font-size: 0.9em; margin-right: 2em;">
+    — 
+    {% assign authors = include.author | split: "," %}
+    {% assign last_index = authors | size | minus: 1 %}
+    {% for author_id in authors %}
+      {% assign author_obj = site.data.authors[author_id] %}
+      {% if author_obj.url %}
+        <em><a href="{{ author_obj.url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
+      {% else %}
+        <em>{{ author_obj.name }} ({{ author_obj.name_eng }})</em>
       {% endif %}
-    </div>
-    <div style="text-align: right; margin-right: 2em;">
-      — 
-      {% assign authors = include.author | split: "," %}
-      {% assign last_index = authors | size | minus: 1 %}
-      {% for author_id in authors %}
-        {% assign author_obj = site.data.authors[author_id] %}
-        {% if author_obj.url %}
-          <em><a href="{{ author_obj.url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
-        {% else %}
-          <em>{{ author_obj.name }} ({{ author_obj.name_eng }})</em>
-        {% endif %}
-        {% if forloop.index0 != last_index %}, {% endif %}
-      {% endfor %}
-    </div>
+      {% if forloop.index0 != last_index %}, {% endif %}
+    {% endfor %}
+
+    {% if include.meter %}
+      {% assign meter_obj = site.data.meters[include.meter] %}
+      {% if meter_obj %}
+        | <em><a href="{{ meter_obj.link }}">{{ meter_obj.name }}</a></em>
+      {% endif %}
+    {% endif %}
   </div>
 </blockquote>
