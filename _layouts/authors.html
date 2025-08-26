@@ -12,7 +12,9 @@ layout: page
     {% assign entries = entries | concat: singleton %}
   {% endfor %}
 
+  {% comment %} Uncomment to sort alphabetically
   {%- assign entries = entries | sort_natural -%}
+  {% endcomment %}
 
   <div class="authors-grid">
     {% for entry in entries %}
