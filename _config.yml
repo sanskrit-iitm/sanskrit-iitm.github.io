@@ -228,3 +228,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-archives
+  - ./_plugins/generate-authors.rb
+  - ./_plugins/extract-verses.rb
