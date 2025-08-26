@@ -1,5 +1,6 @@
 ---
 title: Samasyā Series
+permalink: /posts/samasyA-series
 date: 2025-08-09 07:24:00 +0530
 categories: [Samasyā Series]
 tags: [pādapūrti]  # TAG names should always be lowercase

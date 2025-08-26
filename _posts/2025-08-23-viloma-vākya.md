@@ -1,5 +1,6 @@
 ---
 title: Viloma-Vākya
+permalink: /posts/viloma-vAkya
 date: 2025-08-23 18:07:00 +0530
 categories: [Samasyā Series]
 tags: [viloma]  # TAG names should always be lowercase
