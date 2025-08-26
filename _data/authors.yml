@@ -2,45 +2,50 @@ pakshal:
   name: पक्षालः नागडा
   name_iast: Pakṣālaḥ Nāgaḍā
   name_eng: Pakshal Nagda
+  url: /authors/pakshal
 
 svp:
   name: श्रीवर्षिणी
   name_iast: Śrīvarṣiṇī V P
   name_eng: Sree Varshini V P
+  url: /authors/svp
 
 srivatsav:
   name: श्रीवात्सवः
   name_iast: 
   name_eng: Srivatsav
+  url: /authors/srivatsav
 
 gopalan:
   name: गोपालः 
   name_iast: Gopālaḥ
   name_eng: Gopalan S
+  url: /authors/gopalan
 
 nilay:
   name: निलयः मराठे 
   name_iast: Nilayaḥ Marāṭhe
   name_eng: Nilay Marathe
+  url: /authors/nilay
 
 shankar:
   name: शङ्करनारायणः
   name_iast: Śaṅkaranārāyaṇaḥ
   name_eng: Shankaranarayanan C
+  url: /authors/shankar
 
 amogh:
   name: अमोघः
   name_iast: Amoghaḥ
   name_eng: Amogh
+  url: /authors/amogh
 
 aniketh:
   name: अनिकेतः गणेशः
   name_iast: Aniketaḥ Gaṇeśaḥ
   name_eng: Aniketh Ganesh
   twitter: AnikethGanesh
-  # photo: /img/ss-logo.png
-  # bio: "Test"
-  # url: https://romaharshana.wordpress.com/
+  url: /authors/aniketh
 
 charumathy:
   name: चारुमती विजयकृष्णः
