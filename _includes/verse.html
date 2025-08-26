@@ -1,3 +1,4 @@
+<hr>
 <blockquote style="font-size: 1em; text-align: center; line-height: 1.6;">
   {% assign verse_clean = include.verse | strip %}
   {% assign verse_lines = verse_clean | split: '
@@ -7,6 +8,7 @@
     {{ line }}<br>
   {%- endfor -%}
 
+  <!-- Right-aligned author + meter -->
   <div style="text-align: right; margin-top: 0.5em; font-size: 0.9em; margin-right: 2em;">
     — 
     {% assign authors = include.author | split: "," %}
@@ -16,7 +18,7 @@
       {% if author_obj.url %}
         <em><a href="{{ author_obj.url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
       {% else %}
-        <em>{{ author_obj.name }} ({{ author_obj.name_eng }})</em>
+        <em><a href="{{ '/authors/' | append: author_id | relative_url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
       {% endif %}
       {% if forloop.index0 != last_index %}, {% endif %}
     {% endfor %}
@@ -29,3 +31,13 @@
     {% endif %}
   </div>
 </blockquote>
+
+{% if include.anvaya %}
+<details style="margin: 0.5em 2em; text-align: left; font-size: 0.95em;">
+  <summary style="cursor: pointer; font-weight: bold;">अन्वयः</summary>
+  <div style="margin-top: 0.3em;">
+    {{ include.anvaya }}
+  </div>
+</details>
+{% endif %}
+<br>
