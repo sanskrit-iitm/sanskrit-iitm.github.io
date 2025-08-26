@@ -39,12 +39,10 @@ module Jekyll
         end
       end
 
-      # Write verses into _data/verses.yml
-      data_dir = File.join(site.source, "_data")
-      Dir.mkdir(data_dir) unless Dir.exist?(data_dir)
-      File.write(File.join(data_dir, "verses.yml"), verses.to_yaml)
+      # inject into site.data
+      site.data['verses'] = verses
 
-      puts "Extracted #{verses.size} verses from posts."
+      puts "Extracted #{verses.size} verses into site.data['verses']"
     end
   end
 end
