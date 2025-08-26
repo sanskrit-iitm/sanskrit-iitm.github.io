@@ -30,6 +30,9 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
 
+      - name: Allow custom plugins
+        run: echo "JEKYLL_ENV=production" >> $GITHUB_ENV
+
       - name: Build site
         run: bundle exec jekyll build -d _site
         env:
