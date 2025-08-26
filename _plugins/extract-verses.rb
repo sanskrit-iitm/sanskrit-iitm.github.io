@@ -7,6 +7,7 @@ module Jekyll
     priority :low
 
     def generate(site)
+      puts ">>> Verse extractor running in GitHub Actions"
       verses = []
 
       # ONLY look inside _posts

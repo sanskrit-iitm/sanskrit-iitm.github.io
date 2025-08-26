@@ -3,6 +3,7 @@ module Jekyll
     safe true
 
     def generate(site)
+      puts ">>> Author generator running in GitHub Actions"
       authors = site.data['authors']
 
       authors.each do |id, data|
