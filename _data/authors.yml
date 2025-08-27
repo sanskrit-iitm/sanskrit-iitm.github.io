@@ -14,7 +14,7 @@ svp:
 
 srivatsav:
   name: श्रीवात्सवः
-  name_iast: 
+  name_iast: Śrīvātsavaḥ
   name_eng: Srivatsav
   url: /authors/srivatsav
 
@@ -42,11 +42,34 @@ amogh:
   name_eng: Amogh
   url: /authors/amogh
 
+atreya:
+  name: आत्रेयः वेदान्तः
+  name_iast: Ātreyaḥ Vedāntaḥ
+  name_eng: Atreya Vedantam
+  url: /authors/atreya
+
+devashish:
+  name: देवाशिषः
+  name_iast: Devāśiṣaḥ
+  name_eng: Devashish
+  url: /authors/devashish
+
+srivas:
+  name: श्रीवासः
+  name_iast: Śrīvāsaḥ
+  name_eng: Srivas S
+  url: /authors/srivas
+
+atharva:
+  name: अथर्वः फाटकः
+  name_iast: Atharvaḥ Phāṭakaḥ
+  name_eng: Atharva Phatak
+  url: /authors/atharva
+
 aniketh:
   name: अनिकेतः गणेशः
   name_iast: Aniketaḥ Gaṇeśaḥ
   name_eng: Aniketh Ganesh
-  twitter: AnikethGanesh
   url: /authors/aniketh
 
 sreemayee:

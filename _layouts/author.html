@@ -57,3 +57,28 @@ layout: page
   {% endif %}
   <br>
 {% endfor %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.getElementById('breadcrumb');
+  if (!nav) return;
+
+  // last crumb is the author name
+  var crumbs = nav.querySelectorAll('span');
+  if (crumbs.length < 1) return;
+  var last = crumbs[crumbs.length - 1];
+
+  // don't add twice
+  var authorsHref = '{{ "/authors/" | relative_url }}';
+  if ([...nav.querySelectorAll('a')].some(a => a.getAttribute('href') === authorsHref)) return;
+
+  // insert Authors link before the last crumb
+  var span = document.createElement('span');
+  var a = document.createElement('a');
+  a.href = authorsHref;
+  a.textContent = 'Authors';
+  span.appendChild(a);
+
+  nav.insertBefore(span, last);
+});
+</script>

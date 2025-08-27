@@ -19,16 +19,13 @@ description: Announcement of the Samasyā Series.
 
 एवं समाधानम् अत्र युज्यते —
 
-{% include verse.html
-   author="svp"
-   meter="zloka"
-   verse="
-    <strong>श्री</strong>निकेताय यद्गोप्या
-    <strong>नि</strong>त्यभक्त्या कृतं ननु।
-    <strong>के</strong>वलमपि तत्स्वर्गे
-    <strong>त</strong>क्रं शक्रस्य दुर्लभम्॥
-   "
-%}
+> <strong>श्री</strong>निकेताय यद्गोप्या <br>
+> <strong>नि</strong>त्यभक्त्या कृतं ननु। <br>
+> <strong>के</strong>वलमपि तत्स्वर्गे <br>
+> <strong>त</strong>क्रं शक्रस्य दुर्लभम्॥
+
+
+(~ [श्रीवर्षिण्या](/authors/svp) रचितम्)
 
 एताः समस्याः सप्ताहाय सर्वेभ्य उद्घाट्यन्ते, यस्मात् समेभ्यः संविचिन्त्य स्वकल्पनाः पद्ये स्रावयितुं समयो लभ्यताम्।
 
@@ -48,19 +45,19 @@ Every week starting from today, one of the Samiti members will post a challenge,
 
 For instance, a challenge can be to solve the given pādapūrti. ie. your verse should end with the given pāda, say
 
-तक्रं शक्रस्य दुर्लभम् ॥
+> तक्रं शक्रस्य दुर्लभम् ॥
 (The śakra / indra finds it difficult to get buttermilk.)
 
 A valid solution to the above pādapūrti is:
 
 
-> <strong>श्री</strong>निकेताय यद्गोप्या
-> <strong>नि</strong>त्यभक्त्या कृतं ननु।
-> <strong>के</strong>वलमपि तत्स्वर्गे
-> <strong>त</strong>क्रं शक्रस्य दुर्लभम्॥
+> <strong>श्री</strong>निकेताय यद्गोप्या <br>
+> <strong>नि</strong>त्यभक्त्या कृतं ननु। <br>
+> <strong>के</strong>वलमपि तत्स्वर्गे <br>
+> <strong>त</strong>क्रं शक्रस्य दुर्लभम्॥ <br>
    
 (The buttermilk made by gopī for Kṛṣṇa is not available to even indra in heaven.)
-~ Credits: @Sree Varshini V P
+~ Credits: [@Sree Varshini V P](/authors/svp)
 
 (Note: The above was only an example. This week's challenge is in the next msg.)
 
