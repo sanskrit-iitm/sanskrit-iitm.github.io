@@ -59,26 +59,39 @@ layout: page
 {% endfor %}
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.getElementById('breadcrumb');
-  if (!nav) return;
+(function () {
+  function patch() {
+    var nav = document.getElementById('breadcrumb');
+    if (!nav) return false;                       // not rendered yet
+    if (nav.dataset.authorsPatched === '1') return true;
 
-  // last crumb is the author name
-  var crumbs = nav.querySelectorAll('span');
-  if (crumbs.length < 1) return;
-  var last = crumbs[crumbs.length - 1];
+    // Find the last crumb (the current author name)
+    var crumbs = nav.querySelectorAll('span');
+    if (!crumbs || crumbs.length === 0) return true; // nothing to do
+    var last = crumbs[crumbs.length - 1];
 
-  // don't add twice
-  var authorsHref = '{{ "/authors/" | relative_url }}';
-  if ([...nav.querySelectorAll('a')].some(a => a.getAttribute('href') === authorsHref)) return;
+    // Build “Authors” crumb
+    var s = document.createElement('span');
+    var a = document.createElement('a');
+    a.href = '{{ "/authors/" | relative_url }}';
+    a.textContent = 'Authors';
+    s.appendChild(a);
 
-  // insert Authors link before the last crumb
-  var span = document.createElement('span');
-  var a = document.createElement('a');
-  a.href = authorsHref;
-  a.textContent = 'Authors';
-  span.appendChild(a);
+    // Insert before the last crumb
+    nav.insertBefore(s, last);
 
-  nav.insertBefore(span, last);
-});
+    nav.dataset.authorsPatched = '1';
+    return true;
+  }
+
+  function tryPatch() {
+    if (!patch()) setTimeout(tryPatch, 50); // wait until nav is in DOM
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', tryPatch);
+  } else {
+    tryPatch();
+  }
+})();
 </script>
