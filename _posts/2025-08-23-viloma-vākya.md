@@ -12,7 +12,7 @@ description: Construct a semordnilap
 
 परीक्षा-कारणाद्, अस्मासु केषाञ्चन पद्य-रचनायां क्लेशत्वाच् च सरलतरा समस्या प्रक्ष्यते सप्ताहे ऽस्मिन्।   इह ना ऽनिवार्येण पद्यं लेख्यम् — वाक्य-मात्रम् अप्य् अलम्। 😃
 
-# समस्या ३
+## समस्या ३
 
 यथाशक्ति दीर्घतरं "विलोम-वाक्यं" विरच्यताम्। नाम, वाक्यम् अग्रतः पृष्ठतश् चा ऽक्षरशः पठिते ऽर्थवद् भवेत्। नात्र पूर्णं पद्यम् अपेक्षितम्, दीर्घतरं वाक्य-मात्रम् एव, यद् पृष्ठतः पठिते ऽप्य् अर्थवत् तिष्ठति।
 
@@ -29,7 +29,8 @@ description: Construct a semordnilap
 
 Owing to quiz week and the fact that many of us are not comfortable with composing verses, we have a simpler challenge this week.
 This time you don't have to compose an entire verse, just a single sentence or a phrase will do. 😃
-# Challenge #3
+
+<h3 data-toc-skip>  Challenge 3 </h3>
 
 Construct a semordnilap as long as you can in sanskrit. That is, the sentence should make atleast some meaning when you read it forward  or backward letterwise.
 Note there is no restriction to write an entire verse this time, just construct as long sentence as you can which remains meaningful even when read backwards.
@@ -45,4 +46,4 @@ All the best to all for quiz week 👍
 </div>
 </details>
 
-# समाधानानि
+## समाधानानि

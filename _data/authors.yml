@@ -3,6 +3,8 @@ pakshal:
   name_iast: Pakṣālaḥ Nāgaḍā
   name_eng: Pakshal Nagda
   url: /authors/pakshal
+  photo: 
+  bio: 
 
 svp:
   name: श्रीवर्षिणी
@@ -46,6 +48,12 @@ aniketh:
   name_eng: Aniketh Ganesh
   twitter: AnikethGanesh
   url: /authors/aniketh
+
+sreemayee:
+  name: साय् श्रीमयी शिष्ट्ला
+  name_iast: Sāy Śrīmayī Śiṣṭlā
+  name_eng: Sai Sreemayee Sistla
+  url: /authors/sreemayee
 
 charumathy:
   name: चारुमती विजयकृष्णः
