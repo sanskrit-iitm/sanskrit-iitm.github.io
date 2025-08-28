@@ -5,7 +5,7 @@ date: 2024-07-31 18:54:51 +0200
 categories: []
 tags: [pādapūrti,rāma,sūrya]  # TAG names should always be lowercase
 authors: [aniketh]
-description: 
+description: Praise be to the king whose elder son is slow and younger one a killer of men
 # toc: false
 # comments: false
 ---
