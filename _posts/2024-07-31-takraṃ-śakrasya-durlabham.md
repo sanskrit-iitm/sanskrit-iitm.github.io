@@ -5,7 +5,7 @@ date: 2024-07-31 18:43:43 +0530
 categories: []
 tags: [pādapūrti,indra,kṛṣṇa]  # TAG names should always be lowercase
 authors: [aniketh]
-description: 
+description: Indra finds it hard to get buttermilk
 # toc: false
 # comments: false
 ---
