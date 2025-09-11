@@ -3,9 +3,9 @@ title: Verse Session 46.7
 permalink: /posts/verse-session-46-7 # Change to harvard kyoto
 date: 2024-07-02 18:22:24 +0200
 categories: [Verse Sessions 1946]
-tags: []  # TAG names should always be lowercase
+tags: [guru]  # TAG names should always be lowercase
 authors: [aniketh]
-description: 
+description: Vaidhātrī
 # toc: false
 # comments: false
 ---

@@ -5,7 +5,7 @@ date: 2024-06-21 18:19:16 +0530
 categories: [Verse Sessions 1946]
 tags: [sūrya]  # TAG names should always be lowercase
 authors: [aniketh]
-description: 
+description: Śloka
 # toc: false
 # comments: false
 ---

@@ -37,3 +37,8 @@ vaidhAtrI:
   name: "वैधात्री"
   name_iast: "vaidhātrī"
   link: "https://github.com/shreevatsa/sanskrit/blob/master/data/dhaval_mishra.py"
+
+vidyunmAlA:
+  name: "विद्युन्माला"
+  name_iast: "vidyunmālā"
+  link: "https://www.wisdomlib.org/definition/vidyunmala"

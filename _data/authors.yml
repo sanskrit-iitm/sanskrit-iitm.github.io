@@ -24,6 +24,18 @@ gopalan:
   name_eng: Gopalan S
   url: /authors/gopalan
 
+ratnakar:
+  name: पोत्तूरिः रत्नाकरः
+  name_iast: Pottūri Ratnākaraḥ
+  name_eng: Ratnakar Potturi
+  url: /authors/ratnakar
+
+pranav:
+  name: प्रणवः रमेशः
+  name_iast: Praṇavaḥ Rameśaḥ
+  name_eng: Pranav Ramesh
+  url: /authors/pranav
+
 nilay:
   name: निलयः मराठे 
   name_iast: Nilayaḥ Marāṭhe

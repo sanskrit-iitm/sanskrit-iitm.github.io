@@ -5,7 +5,7 @@ date: 2024-06-10 18:33:02 +0530
 categories: [Verse Sessions 1946]
 tags: [rāma]  # TAG names should always be lowercase
 authors: [aniketh]
-description: 
+description: Śārdūlavikrīḍita
 # toc: false
 # comments: false
 ---
