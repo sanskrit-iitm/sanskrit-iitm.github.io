@@ -9,7 +9,8 @@
     {%- for word in words -%}
       {% assign parts = word | split: "|" %}
       {% if parts.size > 1 %}
-        <span class="toggle-text" data-original="{{ parts[0] }}" data-alt="{{ parts[1] }}">{{ parts[0] }}</span>
+        {%- assign alt_text = parts[1] | replace: "_", " " -%}
+        <span class="toggle-text" data-original="{{ parts[0] }}" data-alt="{{ alt_text }}">{{ parts[0] }}</span>
       {% else %}
         {{ word }}
       {% endif %}
