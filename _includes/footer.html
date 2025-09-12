@@ -1,0 +1,20 @@
+<footer style="margin-bottom: 2em;">
+  <br>
+  © 2025 <a href="https://www.youtube.com/{{ site.youtube.username }}">
+    SaṃskṛtaSamiti, IIT Madras
+  </a>. Some rights reserved.
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".toggle-text").forEach(el => {
+    el.addEventListener("click", () => {
+      const current = el.textContent.trim();
+      const original = el.dataset.original;
+      const alt = el.dataset.alt;
+      el.textContent = (current === original) ? alt : original;
+    });
+  });
+});
+</script>
+

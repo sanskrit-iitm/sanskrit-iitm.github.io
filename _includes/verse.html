@@ -5,7 +5,17 @@
 ' %}
 
   {%- for line in verse_lines -%}
-    {{ line }}<br>
+    {% assign words = line | split: " " %}
+    {%- for word in words -%}
+      {% assign parts = word | split: "|" %}
+      {% if parts.size > 1 %}
+        <span class="toggle-text" data-original="{{ parts[0] }}" data-alt="{{ parts[1] }}">{{ parts[0] }}</span>
+      {% else %}
+        {{ word }}
+      {% endif %}
+      &nbsp;
+    {%- endfor -%}
+    <br>
   {%- endfor -%}
 
   <!-- Right-aligned author + meter -->

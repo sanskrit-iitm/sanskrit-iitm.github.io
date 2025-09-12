@@ -233,3 +233,4 @@ plugins:
   - jekyll-archives
   - ./_plugins/generate-authors.rb
   - ./_plugins/extract-verses.rb
+  - ./_plugins/toggle.rb
