@@ -18,21 +18,24 @@
     {%- endfor -%}
     <br>
   {%- endfor -%}
-
-  <!-- Right-aligned author + meter -->
+  <!-- Right-aligned source + meter -->
   <div style="text-align: right; margin-top: 0.5em; font-size: 0.9em; margin-right: 2em;">
-    — 
-    {% assign authors = include.author | split: "," %}
-    {% assign last_index = authors | size | minus: 1 %}
-    {% for author_id in authors %}
-      {% assign author_obj = site.data.authors[author_id] %}
-      {% if author_obj.url %}
-        <em><a href="{{ author_obj.url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
-      {% else %}
-        <em><a href="{{ '/authors/' | append: author_id | relative_url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
-      {% endif %}
-      {% if forloop.index0 != last_index %}, {% endif %}
-    {% endfor %}
+    {% if include.page and include.title %}
+      <a href="{{ include.page }}">→ {{ include.title }}</a>
+    {% else %}
+      — 
+      {% assign authors = include.author | split: "," %}
+      {% assign last_index = authors | size | minus: 1 %}
+      {% for author_id in authors %}
+        {% assign author_obj = site.data.authors[author_id] %}
+        {% if author_obj.url %}
+          <em><a href="{{ author_obj.url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
+        {% else %}
+          <em><a href="{{ '/authors/' | append: author_id | relative_url }}">{{ author_obj.name }}</a> ({{ author_obj.name_eng }})</em>
+        {% endif %}
+        {% if forloop.index0 != last_index %}, {% endif %}
+      {% endfor %}
+    {% endif %}
 
     {% if include.meter %}
       {% assign meter_obj = site.data.meters[include.meter] %}
