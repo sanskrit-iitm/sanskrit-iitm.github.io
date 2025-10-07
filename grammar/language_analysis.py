@@ -50,13 +50,13 @@ def split_verse(verse):
     verse_split_dn = verse_split_dn.replace('।', '|').replace('XX', '॥').replace('X', '।')
 
     verse_split_dn = re.sub(r'।(?!\|)', '।\n', verse_split_dn)
+    # verse_split_dn = re.sub(r'॥(?!\|)', '॥\n', verse_split_dn)
 
     return verse_split_dn
 
 if __name__ == "__main__":
     test = """
-वृत्तं गुरूपरि लिखेदथ किन्तु शब्दानाचार्यशिक्षकगुरूनिह न प्रयुञ्ज्यात्।
-   वृत्तार्धयोरुभययोरपि कश्चिदङ्कः सङ्ख्यैक्यमत्र नव चेद्वरमस्तु तर्हि॥
+
 """
     print(split_verse(test))
     # print(format_verse_block(test))
