@@ -211,20 +211,27 @@ If you instead see a red cross, click on the cross, click `Details` in the windo
 ---
 ## Advanced Contributors
 ### 📁 Repository Structure
-If you’d like to understand how the site is put together, these are the folders to pay attention to:
+If you’d like to understand how the site is put together, these are the folders and files to pay attention to:
 
 ```bash
 .
-├── _config.yml          # Site configuration
+├── _config.yml          # Site configuration (including list of plugins to be auto-run upon push)
 ├── _includes/           # Reusable HTML snippets (e.g. verse.html)
+│   ├── footer.html      # footer under each page
+│   └── verse.html       # Custom verse block that can be included in posts
 ├── _layouts/            # Page templates (authors page, individual author page)
+│   ├── authors.html     # Page displaying a block for each author in ../_data/authors.yml
+│   └── author.html      # Page displaying verses of each author
 ├── _posts/              # Blog posts
 ├── _data/
 │   ├── authors.yml      # Author metadata
 │   └── meters.yml       # Meters used in verses
 ├── _plugins/            # Custom Ruby plugins (to auto-generate author-pages, enable toggling, etc.)
+│   ├── extract-verses.rb # Extract and save all verses (specified using the custom liquid format) in all posts in site data
+│   ├── generate-authors.rb # Generate page of all authors, and page for each author using the site data extracted with extract-verses.rb
+│   └── toggle.rb        # Implement toggle functionality in all pages
 ├── grammar/             # Automate sandhi-splits (using, e.g., LLMs like Dharmamitra)
-│   ├── language_analysis.py # Undo sandhi in a sentence and break compounds into constituent words
+│   ├── language_analysis.py # Undo sandhi-s in a sentence and break compounds into constituent words
 │   ├── formatter.py     # Perform language_analysis.py and apply toggler syntax for verses in a given .md file that aren't already manually annotated
 │   └── llm_analyser.py  # Perform formatter.py for all .md files in ./_posts
 ├── assets/img/favicons  # Logo, favicons
