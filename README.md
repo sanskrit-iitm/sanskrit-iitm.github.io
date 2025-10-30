@@ -190,6 +190,7 @@ to verify that all your changes display as desired. **DO NOT PROCEED** if any ch
 If all changes work as intended, perform the following steps:
 
 ```bash
+git pull
 git add ./modified_file_1 ./modfified_file_2
 git commit -m "Description of the changes you made"
 git push
