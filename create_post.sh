@@ -16,11 +16,11 @@ else
     cat > "$filename" <<EOF
 ---
 title: $title
-permalink: /posts/$slug # Change to harvard kyoto
+permalink: /posts/$slug # Change to Harvard-Kyoto
 date: $date
-categories: [Verse Sessions 1946]
+categories: []
 tags: []  # TAG names should always be lowercase
-authors: [AUTHOR1, AUTHOR2]
+authors: []
 description: 
 # toc: false
 # comments: false
@@ -28,9 +28,7 @@ description:
 
 ## समस्या X
 
-<!-- U+2800 BRAILLE PATTERN BLANK: "⠀" -->
-
-{%t सन्ध्यादियुक्तवाक्यांशः|सन्धि-आदि-युक्त-वाक्य-अंशः}
+{%t सन्ध्यादियुक्तवाक्यांशोऽयम्|सन्धि-आदि-युक्त-वाक्य-अंशः_अयम्}
 
 <details>
   <summary>आङ्ग्ला-ऽनुवादः</summary>
