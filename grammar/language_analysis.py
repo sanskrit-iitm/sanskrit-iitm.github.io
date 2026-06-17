@@ -1,3 +1,5 @@
+# Documentation at https://pypi.org/project/dharmamitra-sanskrit-grammar/
+
 from dharmamitra_sanskrit_grammar import DharmamitraSanskritProcessor
 import re
 from indic_transliteration import sanscript
@@ -8,7 +10,7 @@ def split_verse(verse):
 
     analysis = DharmamitraSanskritProcessor().process_batch(
         verse_iast,
-        mode="unsandhied-lemma-morphosyntax",  # or 'unsandhied' or 'unsandhied-lemma-morphosyntax'
+        mode="unsandhied-lemma-morphosyntax",  # 'lemma' or 'unsandhied' or 'unsandhied-lemma-morphosyntax'
         human_readable_tags=False
     )
 
@@ -55,10 +57,28 @@ def split_verse(verse):
     return verse_split_dn
 
 if __name__ == "__main__":
-    test = """
+#     test = """
+#     तपःस्वाध्यायनिरतं तपस्वी वाग्विदां वरम्
+# """
+#     print(split_verse(test))
 
-"""
-    print(split_verse(test))
+    # Initialize the processor
+    processor = DharmamitraSanskritProcessor()
+
+    # Process a batch of sentences
+    sentences = [
+        "tapaḥsvādhyāyanirataṃ tapasvī vāgvidāṃ varam",
+        "nāradaṃ paripapraccha vālmīkirmunipuṃgavam"
+    ]
+
+    # Using different modes
+    results = processor.process_batch(
+        sentences,
+        mode="lemma",  # or 'unsandhied' or 'unsandhied-lemma-morphosyntax'
+        human_readable_tags=True
+    )
+
+
     # print(format_verse_block(test))
 
 
