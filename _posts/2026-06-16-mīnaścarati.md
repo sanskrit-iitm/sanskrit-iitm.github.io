@@ -34,7 +34,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     मद्यपस्य दृशौ भ्रान्ते चलत्यावर्तवद्भुवि।
     भूमिरप्यम्बुधिर्भाति मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="srivatsav"
@@ -43,7 +43,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     उड्डीयन्ते शिलाः सर्वा निमज्जन्ति विहङ्गमाः।
     विपरीते जगद्भावे मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="srivatsav"
@@ -52,7 +52,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     गर्दभो गायति प्राज्ञो नृत्यत्यन्धो निरक्षरः।
     सभायां मूर्खराजस्य मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="srivatsav"
@@ -61,7 +61,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     शुष्के सरसि सञ्जाते वृष्टिर्नाभूदनेकधा।
     जीवितार्थं जलार्थी सन् मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="srivatsav"
@@ -70,7 +70,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     गरुडेन हृतो मीनः पक्षवेगेन वेगतः।
     आकाशमार्गमासाद्य मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="srivatsav"
@@ -79,7 +79,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     निर्वारिणि गृहे पत्नी क्रुद्धा भर्तारमब्रवीत्।
     आनय त्वं जलं शीघ्रं मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="srivatsav"
@@ -88,7 +88,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     ब्राह्मणाकृतिमास्थाय पार्थो गूढपराक्रमः।
     प्रतिबिम्बं समालोक्य मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="aniketh"
@@ -97,7 +97,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     प्रलये कारयामास मनुना नावमच्युतः।
     तां नेतुमभवत्स्थायी मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="aniketh"
@@ -106,7 +106,16 @@ Solve the pādapūrti- Fish roams in the sky/land
     खगोलं तु स्थिरं विद्याद्भूमिर्वै परिवर्तते।
     न मेषो न वृषो नापि मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
+%}
+{% include verse.html
+   author="aniketh"
+   meter="zloka"
+   verse="
+    पार्थं मञ्चे समारूढं कृष्णोवाच स्वयंवरे।
+    अधो दृष्ट्वा स वेध्यो यो मीनश्चरति रोदसि॥
+   "
+   anvaya=""
 %}
 {% include verse.html
    author="ratnakar"
@@ -115,7 +124,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     सन्ध्ययोस्सूर्यमूर्तिश्च  विपश्चिदृतुकृद् विभुः।
     छायादेव्या: प्रियश्च स्वामीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="parasaran"
@@ -124,7 +133,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     पाञ्चालेशोऽपि विक्रान्त आश्चर्येण स पश्यति। 
     विध्यति ब्राह्मणो लक्ष्यं मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="pranav"
@@ -133,7 +142,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     अन्नपूर्णा विशालाक्षी क्षुधानाशाय देवता।
     माता सा नयनं यस्या मीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %}
 {% include verse.html
    author="amogh"
@@ -142,7 +151,7 @@ Solve the pādapūrti- Fish roams in the sky/land
     स्वपुत्रं निश्चितोऽन्वेष्टुं तिमिगर्भात्पलायितः।
     चञ्च्वाम्प्लवस्य नारङ्गमीनश्चरति रोदसि॥
    "
-   anvaya="..."
+   anvaya=""
 %} 
 {% include verse.html
    author="svvp"
