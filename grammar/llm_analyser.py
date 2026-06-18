@@ -14,7 +14,7 @@ if not md_files:
     exit(0)
 
 for f in md_files:
-    print(f"Processing {f} ...")
+    print(f"\n\nProcessing {f} ...")
     try:
         process_markdown_file(f)
     except Exception as e:

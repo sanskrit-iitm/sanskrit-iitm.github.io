@@ -48,10 +48,10 @@ source run_locally.sh
 
 This should open a local version of the website hosted at http://127.0.0.1:4000/.
 
-If you want to use the automated tools for grammatical analysis, install the required packages:
+If you want to use the automated tools for grammatical analysis, install the required packages. It is recommended to use a virtual environment:
 
-```bash
-pip install -r requirements.txt
+```
+source pyenv.sh
 ```
 
 You're now all set to begin contributing posts!
